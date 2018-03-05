@@ -1,0 +1,23 @@
+|multiplexor
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+inc => estado.IN0
+inc => estado.IN0
+inc => estado.IN0
+inc => estado.IN0
+car => estado.IN1
+car => estado.IN1
+car => estado.IN1
+car => estado.IN1
+p[0] => q.DATAB
+p[1] => q.DATAB
+p[2] => q.DATAB
+q[0] <> q[0]~reg0
+q[1] <> q[1]~reg0
+q[2] <> q[2]~reg0
+
+

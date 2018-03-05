@@ -1,0 +1,46 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;		-- Simbolos aritmeticos
+use ieee.std_logic_unsigned.all; -- Da solo valores absolutos
+
+entity motorpap is
+
+port(
+		rst: 		in std_logic;
+		A: 		in std_logic_vector(1 downto 0)
+		UpDown: 	in std_logic;
+
+		Disp:inout std_logic_vector(6 downto 0);
+		Leds:out std_logic_vector(3 downto 0));
+		
+end motorpap;
+
+
+architecture pasos of motorpap is
+begin
+	
+	conteo:process (rst)  --Lista sensitva 
+	begin
+		if (rst = '0') then		-- Reset				
+				Leds <= "0000";		--	apagados
+				Disp <= "0000001";	-- 0			
+		else if(A = "00") then						
+					Leds <= "1000";
+					Disp <= "1001111"; --1	
+				else if(A = "01") then
+							Leds <= "0100";
+							Disp <= "0010010"; -- 2
+						else if (A = "10") then
+								Leds <= "0010";
+								Disp <= "0000110"; -- 3
+								else if (A = "11") then
+										Leds <= "0001";
+										Disp <= "1001100"; -- 4
+								end if;
+						end if;
+				end if;
+		end if
+		end if
+	end process conteo;
+end pasos;

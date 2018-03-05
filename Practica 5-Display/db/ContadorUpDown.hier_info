@@ -1,0 +1,26 @@
+|ContadorUpDown
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+UpDown => q.OUTPUTSELECT
+UpDown => q.OUTPUTSELECT
+UpDown => q.OUTPUTSELECT
+UpDown => q.OUTPUTSELECT
+f[0] <> f[0]
+f[1] <> f[1]
+f[2] <> f[2]
+f[3] <> f[3]
+f[4] <> f[4]
+f[5] <> f[5]
+f[6] <> f[6]
+q[0] <> q[0]~reg0
+q[1] <> q[1]~reg0
+q[2] <> q[2]~reg0
+q[3] <> q[3]~reg0
+
+

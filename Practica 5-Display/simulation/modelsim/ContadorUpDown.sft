@@ -1,0 +1,5 @@
+set tool_name "ModelSim (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {ContadorUpDown.vho ContadorUpDown_vhd.sdo}}
+	{{"Fast Model"} {ContadorUpDown_fast.vho ContadorUpDown_vhd_fast.sdo}}
+}

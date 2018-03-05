@@ -1,0 +1,30 @@
+|temporizador
+ck => rckd.CLK
+ck => rc[0].CLK
+ck => rc[1].CLK
+ck => rc[2].CLK
+ck => rc[3].CLK
+ck => rc[4].CLK
+ck => rc[5].CLK
+ck => rc[6].CLK
+ck => rc[7].CLK
+ck => rc[8].CLK
+ck => rc[9].CLK
+ck => rc[10].CLK
+ck => rc[11].CLK
+ck => rc[12].CLK
+ck => rc[13].CLK
+ck => rc[14].CLK
+ck => rc[15].CLK
+ck => rc[16].CLK
+ck => rc[17].CLK
+ck => rc[18].CLK
+ck => rc[19].CLK
+ck => rc[20].CLK
+ck => rc[21].CLK
+ck => rc[22].CLK
+ck => rc[23].CLK
+ck => rc[24].CLK
+CKD <= rckd.DB_MAX_OUTPUT_PORT_TYPE
+
+

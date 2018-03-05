@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon May 01 21:02:52 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : multiplicador
+Top-level Entity Name : multiplicador
+Family : MAX II
+Device : EPM240T100I5
+Timing Models : Final
+Total logic elements : 31 / 240 ( 13 % )
+Total pins : 16 / 80 ( 20 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
